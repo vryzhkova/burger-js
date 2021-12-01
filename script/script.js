@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // функция рендеринга вопросов + ответов
     const renderQuestions = (indexQuestion) => {
-      formAnswers.innerHMTL = '';
+      formAnswers.innerHTML = '';
 
       if (numberQuestion >= 0 && numberQuestion <= questions.length - 1) {
         questionTitle.textContent = `${questions[indexQuestion].question}`
